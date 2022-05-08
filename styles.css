@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+
+}
+:root {
+--myWhite: white;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  gap: 40px;
+ background-image: url('https://images.unsplash.com/photo-1645656817797-86c37adfea59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80');
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.cat-info h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.container {
+  display: block;
+  width: 40vw;
+  height: 80vh;
+ margin-top: 60px; 
+ padding-top: 100px;
+  background-color: rgb(209, 155, 74);
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 30%;
+}
+label {
+  display: flex;
+  font-size: 24px;
+  margin-left: 60px;
+  margin-right: 40px;
+}
+select  {
+  display: inline;
+  width: 260px;
+  height: 40px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+button {
+  display: inline;
+  width: 120px;
+  height: 40px; 
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+  font-size: 16px; 
+  font-weight: bold;
+  background-color: blue;
+}
+.img-window {
+  display: flex;
+  width: 50vw;
+  height: 82vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+ margin-top: 60px; 
+ margin-bottom: 60px;
+   border-radius: 6px;
+   overflow: hidden;
+  background-color: rgb(224, 226, 225);
+}
+
+.cat-info {
+ width: 50%;
+ height: 350px;
+ order: 1;
+ padding: 20px; 
+}
+.cat-info h1 {
+  margin-bottom: 10px;
+}
+.line1 {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+.cat-img {
+  width: 50%;
+  height: 350px;
+   top: 0px;
+   right: 2px;
+   order: 2;
+   background-size: cover;
+   object-fit: cover;
+   border-radius: 0 0 0 6px;
+   overflow: hidden;
+  justify-content: right;
+}
+
+.cat-describe {
+  width: 100%;
+  height: 200px;
+  order: 3;
+  padding: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+ body {
+   display: flex;
+   height: auto;
+   flex-direction: column;
+ }
+ h1 {
+   font-size: 24px;
+ }
+.container {
+  display: block;
+  width: 90%;
+  justify-content: center;
+  height: 400px;
+  margin-top: 10px;
+  bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px ;
+}
+.img-window {
+  display: block;
+  width: 90%;
+  height: auto;
+  padding: 10px;
+  padding-bottom: 30px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  border-radius: 6px;
+}
+.cat-info, .cat-img {
+  width: 100%;
+}
+.cat-img {
+  border-radius: 6px;
+}
+button{
+  margin-top: 5px;
+}
+}
